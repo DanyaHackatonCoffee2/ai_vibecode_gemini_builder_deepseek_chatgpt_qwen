@@ -6,8 +6,7 @@ export default function Header() {
       <div className="max-w-[1280px] mx-auto px-4 h-full flex items-center justify-between">
         <Link to="/" className="flex-shrink-0">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/9815e7ff7ef2932dfbdf8b03f9d7b98a01936c3f?width=498"
-            alt="ПСБ"
+            src="/PSB_logo.png"
             className="h-[60px] md:h-[97px] w-auto"
           />
         </Link>
