@@ -18,21 +18,21 @@ export default function Index() {
 
   return (
     <div className="flex min-h-screen bg-gradient-to-r from-white to-[#80A8FF]">
-      {/* Sidebar */}
-      <aside className="w-full md:w-[265px] flex flex-col justify-between p-4 md:p-6 border-r-0 md:border-r-2 border-black relative">
+      {/* Sidebar - Hidden on mobile, shown on md+ */}
+      <aside className="hidden md:flex md:w-[265px] flex-col justify-between p-6 border-r-2 border-black relative">
         <div>
-          <h2 className="text-2xl md:text-[30px] font-medium leading-[110%] tracking-[-0.9px] text-center text-black font-raleway">
+          <h2 className="text-[30px] font-medium leading-[110%] tracking-[-0.9px] text-center text-black font-raleway">
             История анализа писем
           </h2>
         </div>
-        
-        <div className="text-center mt-8 md:mt-0">
-          <p className="text-lg md:text-xl font-medium leading-[110%] tracking-[-0.6px] text-black/75 mb-2 font-inter">
+
+        <div className="text-center">
+          <p className="text-xl font-medium leading-[110%] tracking-[-0.6px] text-black/75 mb-2 font-inter">
             Вы вошли как Белкин Сергей Викторович.
           </p>
-          <button 
+          <button
             onClick={handleLogout}
-            className="text-lg md:text-xl font-medium leading-[110%] tracking-[-0.6px] text-black font-inter hover:underline transition-all"
+            className="text-xl font-medium leading-[110%] tracking-[-0.6px] text-black font-inter hover:underline transition-all"
           >
             Выйти
           </button>
@@ -75,11 +75,24 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="text-center max-w-xl">
-            <p className="text-2xl md:text-[30px] font-medium leading-[110%] tracking-[-0.9px] text-black font-raleway">
+          <div className="text-center max-w-xl px-4">
+            <p className="text-xl md:text-[30px] font-medium leading-[110%] tracking-[-0.9px] text-black font-raleway">
               Результат обработки письма появится снизу.
             </p>
           </div>
+        </div>
+
+        {/* Mobile logout - shown only on mobile */}
+        <div className="md:hidden mt-auto pb-8 text-center">
+          <p className="text-sm font-medium text-black/75 mb-2 font-inter">
+            Вы вошли как Белкин Сергей Викторович.
+          </p>
+          <button
+            onClick={handleLogout}
+            className="text-sm font-medium text-black font-inter hover:underline transition-all"
+          >
+            Выйти
+          </button>
         </div>
       </main>
     </div>
