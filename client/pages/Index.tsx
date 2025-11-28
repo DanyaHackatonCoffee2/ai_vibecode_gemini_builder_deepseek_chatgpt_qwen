@@ -5,37 +5,37 @@ import Header from "@/components/Header";
 
 const features = [
   {
-    icon: "https://api.builder.io/api/v1/image/assets/TEMP/a4032af5239f6f06e7d62d577f3c048f67f1af7b?width=146",
+    icon: "/1.png",
     title: "Загрузка и получение писем",
     description:
       "Через интерактивный чат со мной Вы сможете загрузить неограниченное количество информации - я смогу прочитать все!",
   },
   {
-    icon: "https://api.builder.io/api/v1/image/assets/TEMP/f70b397bbbb45709ee4fa79690fc44f0fdab7546?width=146",
+    icon: "/2.png",
     title: "Чтение и обработка текста",
     description:
       "Обработаю текст загруженного письма и выделю ключевые параметры - адреса, даты, наименования документов.",
   },
   {
-    icon: "https://api.builder.io/api/v1/image/assets/TEMP/46d861d663871102dbe1824490feff2e2654c158?width=130",
+    icon: "/3.png",
     title: "Работа с разными форматами",
     description:
       "Могу обрабатывать официальные документы .pdf, изображения .jpg/png, получать с них информацию.",
   },
   {
-    icon: "https://api.builder.io/api/v1/image/assets/TEMP/67b8a74bb045bbe0785e22b8c411d5e9248ef383?width=128",
+    icon: "/4.png",
     title: "Выделение ключевых значений",
     description:
       "Тон письма (претензия/уведомление/предложение), адреса отправителя, важные даты - все будет выделено в отдельной графе.",
   },
   {
-    icon: "https://api.builder.io/api/v1/image/assets/TEMP/90de03390b6e94029fea2033417962af32af5d7f?width=146",
+    icon: "/5.png",
     title: "Генерация приемлемого ответа",
     description:
       "Будет создан текст для ответного письма в корректном стиле: деловой. информационный, клиентоориентированный",
   },
   {
-    icon: "https://api.builder.io/api/v1/image/assets/TEMP/a4e3e4af97c6aad12681611d8147bf6b4112736c?width=130",
+    icon: "/6.png",
     title: "Отправка с привязкой к почтовому ящику",
     description:
       "Смогу прочитать сообщения напрямую из почты и автоматически отправить их адресату без необходимости загружать их по отдельности!",
