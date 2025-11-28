@@ -54,7 +54,7 @@ export default function Index() {
   const section3Opacity = useTransform(scrollYProgress, [0.6, 0.75, 1], [0, 1, 1]);
 
   return (
-    <div ref={containerRef} className="relative bg-gradient-to-r from-white to-[#80A8FF]">
+    <div ref={containerRef} className="relative bg-gradient-to-r from-white to-[#80A8FF] h-[300vh]">
       <Header />
 
       {/* Section 1: Welcome */}
